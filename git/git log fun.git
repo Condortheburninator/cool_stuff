@@ -1,0 +1,27 @@
+git log
+
+git log --oneline
+
+git log --graph
+
+# date filtering
+git log --after="2021-10-01"
+
+git log --after="yesterday"
+
+git log --after="2021-10-01" --before="2021-10-08"
+
+# author filtering
+git log --author="brenton"
+
+# by file
+git log -- 2021-10-08.md
+
+# latest five commits
+git log -5
+
+# pretty + format
+git log --pretty='format:%C(yellow bold)%h%Creset %C(magenta bold)%ci%Creset %<(20)%C(cyan bold)%an%Creset %C(green bold)%s%Creset' -15
+
+# thanks to https://www.atlassian.com/git/tutorials/git-log
+# thanks to contd: https://devhints.io/git-log
